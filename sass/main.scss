@@ -1,0 +1,60 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(54, 159, 245);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(10, 96, 167);
+}
+
+.logo {
+  height: 40px;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.layout {
+  margin-top: 70px;
+  .sidebar {
+    width: 300px;
+    // & > div {
+    //   height: 100vh;
+    //   overflow: auto;
+    //   min-height: 500px;
+    // }
+
+    .list-group {
+      .list-group-item {
+        border: none !important;
+        border-radius: 10px !important;
+        margin: 2px 0 !important ;
+      }
+    }
+  }
+  .content {
+    flex: 1;
+    position: sticky;
+    top: 0;
+  }
+}

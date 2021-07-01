@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop Algorismic</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://developer.nytimes.com/logos/favicon.ico?v=1600101624226"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="py-3 shadow bg-white">
+      <div
+        class="
+          container-fluid
+          d-flex
+          justify-content-between
+          align-items-center
+        "
+      >
+        <img
+          src="https://developer.nytimes.com/logos/logo?v=1600101622804"
+          class="logo"
+          alt=""
+        />
+        <div class="d-flex">
+          <input type="text" class="me-2 form-control" />
+          <button class="btn btn-dark">
+            <i class="fas fa-search" aria-placeholder="Search..."></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="container-fluid py-3 layout d-flex">
+      <div class="sidebar pe-3">
+        <div class="bg-white shadow rounded p-3 py-4">
+          <h3 class="mb-4">Bo'limlar</h3>
+          <div class="spinner-border" role="status" id="loading">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="py-3" id="error">
+            <h3 class="text-danger"><i class="fas fa-times"></i> Error</h3>
+          </div>
+          <div class="list-group" id="list">
+            <a href="#" class="list-group-item list-group-item-action active">
+              Combined Print and E-Book Fiction
+              <p
+                class="
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  m-0
+                  mt-2
+                "
+              >
+                <span><i class="fas fa-calendar"></i> 2021-06-20</span>
+                <span class="badge bg-warning text-dark ms-3">WEEKLY</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="bg-white shadow rounded p-3 py-4">
+          <h3 class="mb-3">Kitoblar</h3>
+          <h4 id="list-name"></h4>
+          <div class="spinner-border" role="status" id="loading2">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="py-3 d-none" id="error2">
+            <h3 class="text-danger"><i class="fas fa-times"></i> Error</h3>
+          </div>
+          <div class="row" id="books">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="rounded shadow bg-white p-3">
+                <img
+                  src="https://storage.googleapis.com/du-prd/books/images/9781728251035.jpg"
+                  alt=""
+                  class="w-100 rounded"
+                />
+                <p class="fw-bold mb-2 mt-4">FREED</p>
+                <p class="text-secondary">author: E.L. James</p>
+                <p>Price: <span class="text-warning">0.00</span></p>
+                <!-- learn more -->
+                <a href="#" class="btn btn-dark w-100 rounded">Buy</a>
+                <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Learn more
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Product details</a></li>
+                  <li><a class="dropdown-item" href="#">More about the author</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

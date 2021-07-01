@@ -1,0 +1,54 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #369ff5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0a60a7;
+}
+
+.logo {
+  height: 40px;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.layout {
+  margin-top: 70px;
+}
+.layout .sidebar {
+  width: 300px;
+}
+.layout .sidebar .list-group .list-group-item {
+  border: none !important;
+  border-radius: 10px !important;
+  margin: 2px 0 !important;
+}
+.layout .content {
+  flex: 1;
+  position: sticky;
+  top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
